@@ -18,25 +18,12 @@
         <div class="todo-list">
             <h1>Todo's List</h1>
             <div class="card-holder">
-
                 <button class="create-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                     </svg>
                 </button>
-
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-
             </div>
         </div>
         <div class="cud-tab">
@@ -69,11 +56,12 @@
                     </div>
 
                     <input type="submit" class="submit-button" value="Create new todo">
+                    <p class="error-message" style="color: red; display: none;">All fields must be filled out!</p>
                 </form>
                 
             </div>
             <div class="update-tab" style="display: none;">
-                <h1>Update NAME todo</h1>
+                <h1>Update todo</h1>
 
                 <form>
                     <div class="inpts">
@@ -110,12 +98,15 @@
                         <input type="checkbox" class="check">
                     </div>
 
-                    <input type="submit" class="submit-button" value="Edit todo">
+                    <input type="submit" class="submit-button" value="Confirm Changes">
+                    <button class="delTodo">Delete Todo</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="app.js"></script>
+
 </body>
 </html>

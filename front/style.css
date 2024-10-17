@@ -89,7 +89,7 @@ form {
 }
 
 .inpts input{
-    width: 50%;
+    width: 40%;
     padding: 10px;
     border-radius: 8px;
 }
@@ -97,7 +97,7 @@ form {
 .inpts textarea {
     width: 50%;
     border-radius: 8px;
-    height: 100px;
+    height: 80px;
 }
 
 input.check {
@@ -105,17 +105,17 @@ input.check {
 }
 
 .submit-button {
-    margin-top: 5em;
     padding: 10px 30px;
-    background-color: green;
+    background-color: rgb(0, 187, 0);
+    color: white;
     border-radius: 12px;
     border: none;
     cursor: pointer;
-    transition: transform 0.1s;
+    transition: all 0.2s;
 }
 
 .submit-button:hover {
-    transform: scale(1.05);
+    background-color: rgb(0, 117, 0);
 }
 
 .card-holder {
@@ -129,13 +129,16 @@ input.check {
   
 .card {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     height: 200px;
     width: 100%;
     border: none;
-    cursor: pointer;
     background-color: darkolivegreen;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
   
 .create-card {
@@ -147,4 +150,31 @@ input.check {
     border: none;
     cursor: pointer;
     background-color: gold;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.edit-btn {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: lightblue;
+}
+
+.delTodo {
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    border: none;   
+    transition: all 0.2s;
+}
+
+.delTodo:hover {
+    cursor: pointer;
+    background-color: rgb(152, 0, 0);
 }
