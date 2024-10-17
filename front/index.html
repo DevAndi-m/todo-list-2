@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>todo-list-2</title>
+</head>
+<body>
+    <div class="title">
+        <div>
+            <h1>todo-list-2</h1>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="todo-list">
+            <h1>Todo's List</h1>
+            <div class="card-holder">
+                <button class="create-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="cud-tab">
+            <div class="create-tab">
+                <h1>Create a todo</h1>
+
+                <form>
+                    <div class="inpts">
+                        <label>Todo title:</label>
+                        <input type="text"></input>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Todo description:</label>
+                        <textarea style="resize: none;"></textarea>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Todo dueDate:</label>
+                        <input type="date"></input>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Todo priority:</label>
+                        <select>
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" class="submit-button" value="Create new todo">
+                    <p class="error-message" style="color: red; display: none;">All fields must be filled out!</p>
+                </form>
+                
+            </div>
+            <div class="update-tab" style="display: none;">
+                <h1>Update todo</h1>
+
+                <form>
+                    <div class="inpts">
+                        <label>Change title:</label>
+                        <input type="text"></input>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Change description:</label>
+                        <textarea style="resize: none;"></textarea>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Change dueDate:</label>
+                        <input type="date"></input>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Change priority:</label>
+                        <select>
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Change notes:</label>
+                        <textarea style="resize: none;"></textarea>
+                    </div>
+    
+                    <div class="inpts">
+                        <label>Mark as done</label>
+                        <input type="checkbox" class="check">
+                    </div>
+
+                    <input type="submit" class="submit-button" value="Confirm Changes">
+                    <button class="delTodo">Delete Todo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
